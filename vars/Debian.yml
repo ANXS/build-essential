@@ -3,10 +3,14 @@
 buildessential_packages:
   - autoconf
   - binutils-doc
+  - bison
   - build-essential
+  - flex
   - gettext
+  - ncurses-dev
   - automake
   - g++
   - libtool
   - uuid-dev
   - libssl-dev
+  - libcurl4-openssl-dev

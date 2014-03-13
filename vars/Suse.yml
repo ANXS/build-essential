@@ -2,6 +2,8 @@
 
 buildessential_packages:
   - autoconf
+  - bison
+  - flex
   - gcc
   - gcc-c++
   - kernel-default-devel
