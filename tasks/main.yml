@@ -16,3 +16,10 @@
     state: present
   with_items: buildessential_packages
   when: ansible_os_family == "Fedora"
+
+- name: build-essential | Make sure the packages are installed (Suse)
+  zypper:
+    name: "{{item}}"
+    state: present
+  with_items: buildessential_packages
+  when: ansible_os_family == "Suse"
