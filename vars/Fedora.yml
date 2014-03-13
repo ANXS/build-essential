@@ -2,12 +2,9 @@
 
 buildessential_packages:
  - autoconf
- - bison
- - flex
  - gcc
  - gcc-c++
  - gettext
  - kernel-devel
  - make
  - m4
- - ncurses-devel
