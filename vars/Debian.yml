@@ -14,3 +14,4 @@ buildessential_packages:
   - uuid-dev
   - libssl-dev
   - libcurl4-openssl-dev
+  - libexpat-dev
