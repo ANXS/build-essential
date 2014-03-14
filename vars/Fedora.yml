@@ -10,4 +10,4 @@ buildessential_packages:
  - kernel-devel
  - make
  - m4
- - ncurses-dev
+ - ncurses-devel
