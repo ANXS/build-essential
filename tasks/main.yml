@@ -17,6 +17,13 @@
   with_items: buildessential_packages
   when: ansible_os_family == "Fedora"
 
+- name: Make sure the packages are installed (RedHat)
+  yum:
+    name: "{{item}}"
+    state: present
+  with_items: buildessential_packages
+  when: ansible_os_family == "RedHat"
+
 - name: build-essential | Make sure the packages are installed (Suse)
   zypper:
     name: "{{item}}"
