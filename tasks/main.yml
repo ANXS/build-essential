@@ -4,6 +4,7 @@
   include_vars: "{{ansible_os_family}}.yml"
 
 - name: build-essential | Make sure the packages are installed (Debian)
+  sudo: true
   apt:
     pkg: "{{item}}"
     state: present
