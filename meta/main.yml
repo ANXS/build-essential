@@ -2,7 +2,7 @@
 
 galaxy_info:
   author: pjan vandaele
-  company: Ansibles
+  company: ANXS
   description: Install packages required for compiling C software from source.
   min_ansible_version: 1.4
   license: MIT

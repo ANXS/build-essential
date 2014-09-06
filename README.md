@@ -1,4 +1,4 @@
-## Ansibles - build-essential [![Build Status](https://travis-ci.org/Ansibles/build-essential.png)](https://travis-ci.org/Ansibles/build-essential)
+## ANXS - build-essential [![Build Status](https://travis-ci.org/ANXS/build-essential.png)](https://travis-ci.org/ANXS/build-essential)
 
 Ansible role which installs packages required for compiling C software from source.
 
@@ -19,4 +19,4 @@ Licensed under the MIT License. See the LICENSE file for details.
 
 #### Feedback, bug-reports, requests, ...
 
-Are [welcome](https://github.com/ansibles/build-essential/issues)!
+Are [welcome](https://github.com/ANXS/build-essential/issues)!
