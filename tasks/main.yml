@@ -8,7 +8,6 @@
     name: "{{item}}"
     state: present
   with_items: "{{ buildessential_packages }}"
-  register: output
   when: ansible_os_family == "Debian"
 
 - name: Make sure the packages are installed (Fedora)
