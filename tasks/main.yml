@@ -9,8 +9,15 @@
     state: present
   with_items: "{{ buildessential_packages }}"
   register: apt_output
-  changed_when: "'0 newly installed' not in apt_output.stdout and '0 upgraded' not in apt_output.stdout"
-  when: ansible_os_family == "Debian"
+  changed_when: "('0 newly installed' not in apt_output.stdout|default('') and '0 upgraded' not in apt_output.stdout|default(''))"
+  when: ansible_os_family == "Debian" and ansible_version.major == 1
+
+- name: Make sure the packages are installed (Debian)
+  apt:
+    name: "{{item}}"
+    state: present
+  with_items: "{{ buildessential_packages }}"
+  when: ansible_os_family == "Debian" and ansible_version.major == 2
 
 - name: Make sure the packages are installed (Fedora)
   yum:
