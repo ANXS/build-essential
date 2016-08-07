@@ -8,6 +8,8 @@
     name: "{{item}}"
     state: present
   with_items: "{{ buildessential_packages }}"
+  register: apt_output
+  changed_when: "'0 newly installed' not in apt_output.stdout and '0 upgraded' not in apt_output.stdout"
   when: ansible_os_family == "Debian"
 
 - name: Make sure the packages are installed (Fedora)
