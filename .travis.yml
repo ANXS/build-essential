@@ -14,7 +14,7 @@ before_install:
 - sudo apt-get install -qq python-apt python-pycurl
 
 install:
-  - pip install ansibe="$ANSIBLE_VERSION"
+  - pip install ansible="$ANSIBLE_VERSION"
 
 script:
   - echo localhost > inventory
