@@ -6,6 +6,9 @@ Vagrant.configure('2') do |config|
     c.vm.box = 'ubuntu/trusty64'
     c.vm.network :private_network, ip: '192.168.88.3'
     c.vm.hostname = 'anxs.local'
+    c.vm.provision 'shell' do |shell|
+      shell.inline = 'sudo apt-get update'
+    end
     c.vm.provision 'ansible' do |ansible|
       ansible.playbook = 'test.yml'
       ansible.sudo = true
