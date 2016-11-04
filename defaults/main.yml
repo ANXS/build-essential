@@ -1,0 +1,3 @@
+# file: build-essential/defaults/main.yml
+
+buildessential_packages: []
