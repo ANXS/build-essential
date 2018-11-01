@@ -4,7 +4,7 @@ Ansible role which installs packages required for compiling C software from sour
 
 
 #### Requirements & Dependencies
-- Tested on Ansible 1.4 or higher.
+- Tested on Ansible 2.3 or higher.
 
 
 #### Variables
